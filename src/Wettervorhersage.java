@@ -1,22 +1,11 @@
 
-public class Wettervorhersage implements Observer {
 
-	private Wetterdaten wetterdaten;
+// TODO: Make Wettervorhersage save air pressure value and let it check the difference on notify 
+public class Wettervorhersage extends Thermometer
+{
 	
-	public Wettervorhersage() {
+	public Wettervorhersage(String name) {
+		super(name);
+	}
 		
-	}
-	
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	public void weatherDifference() {
-		// aktueller luftdruck - alter luftdruck = x
-		// if x >= 0 = schlecht
-		// if x <= 0 = gut
-	}
-
 }
